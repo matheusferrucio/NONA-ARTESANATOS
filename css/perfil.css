@@ -1,0 +1,66 @@
+:root {
+    --azul-escuro: #002074;
+    --azul-escuro2: #042e99;
+    --azul-escuro3: #0534ac;
+    --azul-intermediario: rgb(18, 18, 233);
+    --azul-claro: rgb(39, 39, 243);
+    --cor-texto: rgb(75, 73, 73);
+    --cinza: rgb(235, 231, 231);
+}
+
+.container-perfil {
+    max-width: 1000px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    border: 1px solid silver;
+    box-shadow: 0 0 15px silver;
+}
+
+.container-perfil h1 {
+    font-size: 1.8em;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px 0;
+    background-color: var(--azul-escuro);
+    border-radius: 6px;
+}
+
+.container-perfil .w100 {
+    padding: 8px 0;
+}
+
+.container-perfil label {
+    color: var(--azul-escuro);
+    font-size: 1.1rem;
+    font-weight: bolder;
+}
+
+.container-perfil input {
+    border: none;
+    border-bottom: 2px solid silver;
+    outline: none;
+    background-color: transparent;
+    color: var(--cor-texto);
+    font-weight: 500;
+}
+
+.editar a {
+    padding: 10px 20px;
+    color: var(--cor-texto);
+    background-color: #ccc;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+.editar a:hover {
+    background-color: var(--azul-escuro);
+    color: white;
+}
+
+.info-endereco .editar {
+    margin-bottom: 30px;
+}

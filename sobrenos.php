@@ -1,0 +1,7 @@
+<div class="container sobre-content">
+    <h1>Sobre nós do projeto NONA ARTESANATOS</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quae ipsam tempore necessitatibus culpa molestiae sit optio iste beatae! Voluptatibus, laborum. Consequatur aliquam commodi, nobis veritatis ipsam est eius ullam!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga debitis beatae iusto rem qui, soluta, itaque nulla non, dolor error consectetur sunt doloremque ex delectus vero aliquid quod inventore. Rerum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi corrupti provident tenetur reiciendis sed totam cum ex est nihil, debitis architecto harum vitae, eius, illum dolor neque odio mollitia fugiat.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem accusantium ad cupiditate laboriosam maxime reprehenderit ipsum possimus quia sed? Rerum cumque assumenda ab accusamus accusantium aspernatur quia asperiores id est? Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci nobis voluptate ducimus est reiciendis quae, placeat ipsam animi officiis tenetur. Ullam tempore eaque at illum itaque dolorem delectus sunt in? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore dignissimos enim, porro itaque quae soluta temporibus doloribus? Architecto enim est, necessitatibus voluptatum et sequi a sit rerum atque, labore deserunt!</p>
+    <a href="<?php echo ENDERECO_SITE; ?>home">Voltar para a página principal</a>
+</div>

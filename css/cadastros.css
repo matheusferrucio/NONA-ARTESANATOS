@@ -1,0 +1,146 @@
+:root {
+    --azul-escuro: #002074;
+    --azul-escuro2: #042e99;
+    --azul-escuro3: #0534ac;
+    --azul-intermediario: rgb(18, 18, 233);
+    --azul-claro: rgb(39, 39, 243);
+    --cor-texto: rgb(75, 73, 73);
+    --cinza: rgb(235, 231, 231);
+}
+
+
+/* ------------------------------ ESTILIZAÇÃO CADASTRO CLIENTE ------------------------------ */
+.cadastro-content {
+    max-width: 750px;
+    margin: 50px auto;
+    padding: 20px;
+    border-top: 3px solid var(--azul-escuro);
+    border-bottom: 3px solid var(--azul-escuro);
+    /* background-color: white; */
+    /* border-radius: 10px; */
+    /* border: 2px solid silver; */
+    /* box-shadow: 0 0 40px #ccc; */
+}
+
+.centralizar {
+    gap: 15px;
+}
+
+.cadastro-content input:not(input[type=submit]) {
+    border: 1px solid silver;
+    outline: none;
+    padding-left: 10px;
+    height: 40px;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.cadastro-content h1 {
+    font-size: 2em;
+    color: var(--azul-escuro);
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.cadastro-content form div {
+    padding: 8px 0;
+}
+
+.cadastro-content form div label {
+    color: var(--cor-texto);
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.cadastro-content form .data-cpf {
+    gap: 15px;
+}
+
+/* tira as setas laterias do input number */
+.cadastro-content form .data-cpf .cpf input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* tira o espaçamento apenas dos inputs do genero */
+.genero > .centralizar {
+    gap: 0;
+}
+
+.genero .genero-items {
+    flex-wrap: wrap;
+}
+
+.genero .genero-items .genero-item {
+    gap: 10px;
+    align-items: center;
+}
+.genero .genero-items .genero-item label {
+    margin-top: 7px;
+}
+
+.ddd-telefone {
+    gap: 15px;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.aviso-importante img {
+    width: 35px;
+    height: 35px;
+}
+
+.container form .botao-cadastrar {
+    padding: 20px 0;
+}
+
+.botao-cadastrar input[type=submit]{
+    max-width: 200px;
+    height: 50px;
+    border-radius: 6px;
+    border: 3px solid var(--azul-escuro);
+    color: var(--azul-escuro);
+    background-color: transparent;
+    font-size: 1.3em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+.botao-cadastrar input[type=submit]:hover {
+    background-color: var(--azul-escuro);
+    color: white;
+}
+
+/* ------------------------------ ESTILIZAÇÃO CADASTRO ARTESÃO ------------------------------ */
+
+
+/* ------------------------------ RESPONSIVO ------------------------------ */  
+@media screen and (max-width: 520px){
+    .cadastro-content form .data-cpf {
+        flex-direction: column;
+    }
+    .cadastro-content form .data-cpf .w50 {
+        width: 100%;
+    }
+
+    .container form .genero .genero-items .genero-item {
+        width: 100%;
+    }
+
+    .aviso-importante {
+        max-width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .aviso-importante {
+        font-size: 12px;
+    }
+}

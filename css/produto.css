@@ -1,0 +1,367 @@
+:root {
+    --azul-escuro: #002074;
+    --azul-escuro2: #042e99;
+    --azul-escuro3: #0534ac;
+    --azul-intermediario: rgb(18, 18, 233);
+    --azul-claro: rgb(39, 39, 243);
+    --cor-texto: rgb(75, 73, 73);
+    --cinza: rgb(235, 231, 231);
+}
+
+section.slider {
+    padding: 0;
+    margin: 50px auto;
+}
+
+.produto-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    border-radius: 10px;
+    margin: 50px auto;
+    padding: 0;
+}
+
+.produto-content div {
+    padding: 10px 0;
+}
+
+/* ESTILIZAÇÃO DA DESCRIÇÃO DO PRODUTO */
+.produto-content .descricao-produto {
+    background-color: #1a40a01e;
+    border-radius: 6px 0 0 6px;
+    padding: 10px;
+}
+
+.produto-content .descricao-produto h3 {
+    color: var(--azul-escuro);
+    font-size: 1.8em;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.produto-content .descricao-produto p {
+    color: var(--cor-texto);
+    font-size: 1em;
+    text-align: justify;
+}
+
+.produto-content .descricao-produto .nome-vendedor span {
+    font-weight: 600;
+}
+
+.produto-content .descricao-produto .nome-material span:last-of-type {
+    font-weight: 600;
+}
+
+.produto-content .descricao-produto .cores-produto {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10px, 20px));
+    grid-gap: 10px;
+}
+.produto-content .descricao-produto .cores-produto .cor-produto-item {
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.produto-content div.foto-produto {
+    grid-column: auto / span 2;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+    padding: 11px;
+    background-color: white;
+}
+
+.produto-content .foto-produto .img-item  {
+    width: auto;
+    height: auto;
+    max-height: 300px;
+    /* border: 1px solid silver; */
+    padding: 0;
+}
+
+/* ESTILIZAÇÃO DAS INFORMAÇÕES DO PRODUTO */
+.produto-content .informacoes-produto {
+    background-color: #1a40a01e;
+    padding: 10px;
+    border-radius: 0 6px 6px 0;
+}
+
+.produto-content .informacoes-produto .avaliacao-produto {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.produto-content .informacoes-produto .avaliacao-produto .estrelas {
+    color: yellow;
+    text-align: right;
+}
+
+.produto-content .informacoes-produto .avaliacao-produto .num-avaliacoes {
+    font-size: .8em;
+    text-align: left;
+}
+
+.produto-content .informacoes-produto .preco-produto .preco-antigo {
+    color: var(--cor-texto);
+    font-size: 1.1em;
+}
+
+.produto-content .informacoes-produto .preco-produto .preco-novo {
+    color: rgba(0, 0, 0, 0.774);
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.produto-content .informacoes-produto .tamanhos > .centralizar {
+    gap: 0;
+}
+
+.produto-content .informacoes-produto .tamanhos p {
+    font-size: 1.3em;
+    color: var(--cor-texto);
+}
+
+.produto-content .informacoes-produto .tamanhos .tamanhos-item select {
+    height: 45px;
+    background-color: white;
+    font-size: 16px;
+    color: var(--cor-texto);
+    outline: none;
+    text-align: center;
+}
+.produto-content .informacoes-produto .tamanhos .tamanhos-item select:first-of-type {
+    border: 1px solid gray;
+    border-radius: 30px 0 0 30px;
+}
+.produto-content .informacoes-produto .tamanhos .tamanhos-item select:last-of-type {
+    border-top: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    border-radius: 0 30px 30px 0;
+}
+
+.produto-content .informacoes-produto .frete p {
+    font-size: 1.3em;
+    color: var(--cor-texto);
+}
+
+.produto-content .informacoes-produto .frete .cep-frete input {
+    height: 45px;
+    padding-left: 10px;
+    color: var(--cor-texto);
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid gray;
+    outline: none;
+}
+
+.produto-content .informacoes-produto .frete .prazo-medio .centralizar {
+    flex-direction: column;
+    font-size: .9em;
+    color: var(--cor-texto);
+    gap: 0;
+}
+
+.produto-content .informacoes-produto .frete .prazo-medio .centralizar p:last-of-type {
+    font-weight: bold;
+}
+
+.produto-content .informacoes-produto .botoes-comprar a {
+    text-align: center;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 6px;
+    /* background-color: var(--azul-escuro); */
+    border: 2px solid var(--azul-escuro);
+    color: var(--azul-escuro);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    transition: all .4s ease;
+}
+.produto-content .informacoes-produto .botoes-comprar a:hover {
+    background-color: var(--azul-escuro);
+    color: white;
+}
+
+/* ESTILIZAÇÃO DO CONTAINER DE INFORMAÇÕES DO VENDEDOR */
+.informacoes-vendedor {
+    background-color: white;
+    border-radius: 6px;
+    border: 1px solid #1a40a01e;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.informacoes-vendedor .foto-vendedor {
+    width: 200px;
+    height: 200px;
+}
+
+.informacoes-vendedor .foto-vendedor .foto {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: silver;
+}
+
+.informacoes-vendedor .foto-vendedor .foto img {
+    border-radius: 50%;
+    border: 1px solid #1a40a01e;
+}
+
+.informacoes-vendedor .nome-vendedor {
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.informacoes-vendedor .nome-vendedor h3 {
+    color: var(--azul-escuro);
+    font-size: 1.7em;
+    font-weight: 700;
+}
+
+.informacoes-vendedor .avaliacao-vendedor {
+    justify-content: flex-start;
+    font-size: 1.2em;
+}
+
+.informacoes-vendedor .avaliacao-vendedor .estrelas {
+    color: yellow;
+}
+
+.informacoes-vendedor .nome-vendedor a {
+    height: 45px;
+    line-height: 45px;
+    border: 2px solid var(--azul-escuro);
+    color: var(--azul-escuro);
+    border-radius: 6px;
+    font-size: 1.1em;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all .4s ease;
+}
+.informacoes-vendedor .nome-vendedor a:hover {
+    background-color: var(--azul-escuro);
+    color: white;
+}
+
+.informacoes-vendedor .dados-vendedor {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.informacoes-vendedor .dados-vendedor p {
+    width: 50%;
+    height: 50%;
+    color: var(--cor-texto);
+}
+
+.informacoes-vendedor .dados-vendedor p span {
+    color: blue;
+    font-weight: 600;
+}
+
+/* ESTILIZAÇÃO DA FICHA TÉCNICA */
+.ficha-tecnica {
+    padding: 0; 
+}
+
+.ficha-tecnica h1 {
+    color: var(--azul-escuro);
+    font-size: 2em;
+    padding: 35px 0 10px 0;
+}
+
+.ficha-tecnica table {
+    width: 100%;
+    border: none;
+    text-align: left;
+}
+
+.ficha-tecnica table tr {
+    width: 100%;
+    background-color: #ccc;
+}
+.ficha-tecnica table td,
+.ficha-tecnica table th {
+    width: 50%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.2em;
+    border: 1px solid silver;
+    padding-left: 10px;
+}
+
+.ficha-tecnica table tr.cor-diferente {
+    background-color: white;
+}
+
+/* ESTILIZAÇÃO DA SEÇÃO DE COMENTÁRIOS */
+section.comentarios {
+    width: 100%;
+    padding: 40px 0;
+    background-color: var(--azul-escuro3);
+}
+
+section.comentarios .foto-usuario {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+section.comentarios .foto-usuario img {
+    border-radius: 50%;
+}
+
+section.comentarios input {
+    height: 50px;
+    /* border: 1px solid var(--azul-escuro); */
+    border: none;
+    border-radius: 6px;
+    color: var(--cor-texto);
+    font-size: 15px;
+    outline: none;
+}
+section.comentarios input[type=text]{
+padding-left: 10px;
+}
+
+section.comentarios .inserir-comentario input[type=submit]{
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    border: 2px solid white;
+    background-color: transparent;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+section.comentarios .inserir-comentario input[type=submit]:hover {
+    background-color: white;
+    color: var(--azul-escuro3);    
+}
+
+section.comentarios .comentarios-clientes h1 {
+    color: white;
+    font-size: 1.4em;
+    border-bottom: 1px solid white;
+    padding: 30px 0 10px 0;
+}
+
+section.comentarios .comentarios-clientes div {
+    /* border: 2px solid white; */
+    margin: 7px 0;
+    margin: 15px 0;
+}
+
+section.comentarios .comentarios-clientes input[type=text] {
+    background-color: transparent;
+    border-radius: 0;
+    border-bottom: 2px solid white;
+    color: white;
+}
